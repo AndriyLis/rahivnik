@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .zadacha {
+            display: block;
+            /* border: 2px solid black; */
+            font-size: 100px;
+            text-align: center;
+            letter-spacing: 20px;
+            
+        }
+        .onesklad {
+            border: 2px solid blue;
+            max-width: 500px;
+            align-items: center;
+            margin: 0px auto;
+            font-weight: 900;
+            text-shadow: 2px 2px 2px blue;
+            background-color: bisque;
+        }
+        
+        .vidpovid {
+            display: flex;
+            
+            /* border: 2px solid black; */
+            width: 900px;
+            align-items: center;
+            margin: 0px auto;
+            margin-top: 75px;
+            
+            
+        }
+        .img1 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            padding: 2px;
+        }
+        .img2 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            padding: 2px;
+
+        }
+        .img3 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            padding: 2px;
+
+        }
+        .fon {
+            background-image: url(./img2/fon.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            
+            
+            
+        }
+        .rahivnik  {
+            font-size: 30px;
+            border: 2px solid black;
+            text-decoration: none;
+            margin: 0px 0px 0px 50px;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: greenyellow;
+            border-radius: 20px;
+        }
+        .button {
+            min-height: 50px;
+            width: 100%;
+        }
+        .button_vid {
+            align-items: center;
+            margin: 0px auto;
+            width: 200px;
+            height: 40px;
+            display: inherit;
+            font-size: 30px;
+            background-color: rgba(121, 121, 202, 0.192);
+            color: blue;
+            border-radius: 10px;
+            font-weight: 700;
+            box-shadow: 9px 7px 5px rgba(29, 29, 31, 0.76);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="fon">
+        <a class="rahivnik" href="index.html">Рахівник</a>
+        <div class="zadacha">
+            <div class="onesklad" id="slovo">
+                Перший
+            </div>
+            
+
+        </div>
+        <div class="vidpovid">
+            <form action=""><img class="img1" id="img1" src="" alt="firstimg"></form>
+            <form action=""><img class="img2" id="img2" src="" alt="secondimg"></form>
+            <form action=""><img class="img3" id="img3" src="" alt="firthimg"></form>
+        </div>
+        <div class="button">
+            <button class="button_vid" id="button">Продовжити</button>
+
+        </div>
+    </div>
+    <script src="logika2.js"></script>
+    
+</body>
+</html>

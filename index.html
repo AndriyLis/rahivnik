@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    
+    <style>
+        .lich {
+            font-size: 50px;
+            background-color: rgb(5, 5, 255);
+            min-width: 50px;
+            text-align: center;
+            color: rgb(1, 78, 1);
+            border: 2px solid black;
+            border-radius: 36px;
+            position: fixed;
+            top: 10px;
+            left: 20px;
+        }
+        .contaner {
+            max-width: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 25%;
+            margin-top: 10%;
+            margin-right: 25%;
+            font-weight: bold;
+            background-color: rgba(255, 228, 196, 0.527);
+            
+        }
+        .fon {
+            background-image: url(fon.jpg);
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            
+            
+        }
+        #knopki {
+            margin-left: 25%;
+            margin-right: 25%;
+            
+        }
+        #gen1 {
+            
+            margin-top: 5%;
+            background-color: blue;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #vidpravit {
+            background-color: green;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #gifka {
+            width: 400px;
+            height: 300px;
+            display: none;
+            position: fixed;
+            top: 320px;
+            left: 10px;
+            
+        }
+        #gif {
+            position: absolute;
+            display: flex;
+            
+        }
+        .chetalka {
+            text-align: center;
+            display: inline-block;
+            font-size: 30px;
+            border: 2px solid black;
+            text-decoration: none;
+            font-weight: 700;
+            width: auto;
+            margin: 0px auto;
+            margin-left: 200px;
+            background-color: blue;
+            color: black;
+            border-radius: 20px;
+            
+        }
+    </style>
+</head>
+<body class="fon">
+    <style>
+        .result {
+                        padding: 2px 20px;
+    border-radius: 36px;
+    margin-left: 8px;
+    transition: background-color 2s ease-out 100ms
+        } 
+.result_done {
+    background: green;
+}
+.result_error {
+    background: red;
+}
+
+    </style>
+    <a href="index2.html" class="chetalka">Читальник)</a>
+    <div class="contaner" style="font-size: 70px;">
+        <div id="argumentone">0</div>
+        <div id="symbol">+</div>
+        <div id="argumenttwo">0</div>
+        <div id="perevirka">=</div>
+        <div id="result" class="result"></div>
+
+        <input type="text" id="vidpovid" style="font-size: 50px; width: 70px;">
+
+    </div>
+    <div id="knopki">
+        <button id="gen1">Згенерувати</button>
+        <input type="button" id="vidpravit" value="Відповісти">
+        <h1 class="lich" id="lich">0</h1>
+
+    </div>
+    <div id="gif">
+        <img id="gifka" src="" alt=".">
+
+    </div>
+
+    <script src="logika.js"></script>
+</body>
+</html>
